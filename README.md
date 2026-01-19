@@ -28,6 +28,19 @@ The solution integrates **IoT architecture**, **time-series forecasting**, **dee
 - Visualize real-time status and future availability through dashboards
 
 ---
+## 👥 Contributors
+
+- **Ved Prakash Dwivedi**  
+- **Dhrub Satyam**
+
+---
+
+## 🎓 Faculty Advisor
+
+- **Prof. Anamika Kumari**  
+  University of San Diego – Applied Artificial Intelligence Program
+
+---
 
 ## 🧠 Methods Used
 
