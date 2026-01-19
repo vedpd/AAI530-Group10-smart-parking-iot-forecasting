@@ -37,7 +37,7 @@ The solution integrates **IoT architecture**, **time-series forecasting**, **dee
 
 ## 🎓 Faculty Advisor
 
-- **Prof. Anamika Kumari**  
+- **Prof. Anamika Singh**  
   University of San Diego – Applied Artificial Intelligence Program
 
 ---
