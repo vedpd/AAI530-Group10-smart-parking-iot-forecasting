@@ -3,8 +3,8 @@
 This project is part of the **Applied Artificial Intelligence (AAI)** program at the **University of San Diego (USD)**.
 An Applied AI project demonstrating a Smart Parking IoT architecture with sensor data ingestion, time-series forecasting, deep learning (LSTM), and Tableau-based analytics for urban parking optimization.
 
-**Course:** AAI-530
-**Group:** 10
+**Course:** AAI-530 </br>
+**Group:** 10 </br>
 **Project Status:** In Progress  
 
 ---
