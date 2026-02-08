@@ -68,21 +68,29 @@ The solution integrates **IoT architecture**, **time-series forecasting**, **dee
 
 ## 📊 Dataset Description
 
-**Dataset:** SFpark / Smart Parking Dataset  
+**Main Dataset:** `data\raw\smart_parking_full.csv`  
 **Source:** San Francisco Open Data (via Kaggle)  
 **Data Type:** Time-series parking occupancy data  
 
 **Key Characteristics:**
 - Sensor-based parking space occupancy
 - Minute-level and hourly observations
-- Clean, structured CSV format
+- Clean, structured CSV format with semicolon delimiter
 - Real-world IoT data from urban infrastructure
+- **508,034 records** with comprehensive sensor readings
 
 **Key Features Include:**
-- Parking space ID
-- Timestamp
-- Occupancy status (occupied / available)
-- Location metadata
+- `timestamp` - Date and time of observation
+- `segmentid` - Parking segment identifier
+- `capacity` - Total parking spaces in segment
+- `occupied` - Currently occupied spaces
+- `observed1-10` - Multiple sensor readings
+- `diff1-10` - Sensor difference values
+
+**Important Notes:**
+- The main dataset file (`smart_parking_full.csv`) is **not** included in `.gitignore` and should be committed to the repository
+- Ensure the dataset is placed in `data\raw\` directory before running notebooks
+- Dataset uses semicolon (`;`) as delimiter, not comma
 
 ---
 
@@ -150,6 +158,64 @@ The system follows a layered IoT architecture:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/smart-parking-iot-forecasting.git
-2. Install required Python packages:
- ```bash
+   cd smart-parking-iot-forecasting
+   ```
+
+2. Ensure the main dataset is present:
+   - The main dataset `data\raw\smart_parking_full.csv` should be included in the repository
+   - If missing, download from the project source and place in the specified directory
+
+3. Install required Python packages:
+   ```bash
    pip install -r requirements.txt
+   ```
+
+4. Run the notebooks in order:
+   - `01_data_overview.ipynb` - Data exploration and understanding
+   - `02_cleaning_and_eda.ipynb` - Data cleaning and exploratory analysis
+   - `03_time_series_forecasting.ipynb` - Time series analysis and forecasting
+   - `04_ml_baseline_models.ipynb` - Machine learning baseline models
+
+---
+
+## 📁 Project Structure
+
+```
+smart-parking-iot-forecasting/
+├── data/
+│   ├── raw/
+│   │   └── smart_parking_full.csv     # Main dataset (committed to repo)
+│   ├── processed/                    # Processed data (gitignored)
+│   └── external/                     # External data (gitignored)
+├── notebooks/
+│   ├── 01_data_overview.ipynb
+│   ├── 02_cleaning_and_eda.ipynb
+│   ├── 03_time_series_forecasting.ipynb
+│   └── 04_ml_baseline_models.ipynb
+├── models/                           # Trained models (gitignored)
+├── src/                              # Source code
+├── requirements.txt
+├── .gitignore                        # Git ignore rules
+└── README.md
+```
+
+---
+
+## 🚫 Git Ignore Policy
+
+The `.gitignore` file is configured to:
+
+**Ignore:**
+- Processed data files (`data/processed/`)
+- External datasets (`data/external/`)
+- Trained models (`models/`)
+- Jupyter checkpoints (`*.ipynb_checkpoints`)
+- Python cache files (`__pycache__/`)
+- Virtual environments (`venv/`, `env/`)
+- IDE files (`.vscode/`, `.idea/`)
+- OS files (`.DS_Store`, `Thumbs.db`)
+
+**Explicitly Include:**
+- `data/raw/smart_parking_full.csv` - The main dataset is **NOT ignored** and should be committed
+
+This ensures the main dataset is always available while keeping generated files and temporary artifacts out of version control.
