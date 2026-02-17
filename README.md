@@ -200,7 +200,35 @@ smart-parking-iot-forecasting/
 ```
 
 ---
+## 🚀 Interactive Dashboard
 
+### 📊 **Smart Parking Analytics Dashboard**
+A comprehensive, interactive dashboard showcasing parking occupancy insights and model performance.
+
+### **🔗 Quick Access:**
+- **[🌐 Open Dashboard](dashboard/fixed_dashboard.html)** - Click to view live dashboard
+
+### **📈 Features:**
+- **8 Interactive Charts** including:
+  - 📊 Record Types Distribution
+  - 🤖 Model Sources Distribution  
+  - 📈 Occupancy Rate Time Series
+  - 🏆 Model Performance Comparison
+  - 📊 Error Distribution Analysis
+  - 🔥 Hourly Occupancy Heatmap
+  - 🎯 Top Performing Segments
+  - 📉 Occupancy Rate Distribution
+
+### **📊 Dataset Overview:**
+- **719,882 Records** across 841 parking segments
+- **Real-time analytics** with responsive design
+- **Modern UI** with gradient styling and animations
+
+### **🛠️ Technical Stack:**
+- **Plotly.js** for interactive visualizations
+- **Responsive CSS Grid** layout
+- **Real-time data** processing and rendering
+---
 ## 🚫 Git Ignore Policy
 
 The `.gitignore` file is configured to:
