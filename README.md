@@ -202,22 +202,122 @@ smart-parking-iot-forecasting/
 ---
 ## 🚀 Interactive Dashboard
 
-### 📊 **Smart Parking Analytics Dashboard**
-A comprehensive, interactive dashboard showcasing parking occupancy insights and model performance.
+## 📊 Smart Parking IoT – Occupancy & Demand Analytics Dashboard
 
-### **🔗 Quick Access:**
-- **[🌐 Open Dashboard](dashboard/fixed_dashboard.html)** - Click to view live dashboard
+### 🔗 Live Dashboard
+- **[🌐 Open Interactive Tableau Dashboard](https://public.tableau.com/app/profile/dhrub.satyam/viz/SmartParking_Group10_AAI530/Dashboard1)**
 
-### **📈 Features:**
-- **8 Interactive Charts** including:
-  - 📊 Record Types Distribution
-  - 🤖 Model Sources Distribution  
-  - 📈 Occupancy Rate Time Series
-  - 🏆 Model Performance Comparison
-  - 📊 Error Distribution Analysis
-  - 🔥 Hourly Occupancy Heatmap
-  - 🎯 Top Performing Segments
-  - 📉 Occupancy Rate Distribution
+---
+
+## 🚀 Overview
+
+The **Smart Parking IoT – Occupancy & Demand Analytics Dashboard** is an end-to-end analytics interface designed to monitor parking utilization, evaluate forecasting performance, and support data-driven operational decisions.
+
+Built using IoT sensor telemetry and machine learning outputs, the dashboard provides a unified view of:
+
+- Real-world parking occupancy behavior  
+- Forecasted vs actual demand patterns  
+- Model performance benchmarking  
+- Temporal demand insights for operational planning  
+
+This dashboard serves as a decision-support layer for smart city and intelligent transportation systems.
+
+---
+
+## 🧠 Analytics Objectives
+
+The dashboard focuses on three core analytical goals:
+
+1. **Occupancy Monitoring**
+   - Track real-time and historical occupancy trends.
+   - Identify usage patterns across time.
+
+2. **Demand Forecast Validation**
+   - Compare machine learning forecasts with actual occupancy.
+   - Assess predictive reliability for planning and resource allocation.
+
+3. **Model Performance Evaluation**
+   - Benchmark forecasting models using standardized error metrics.
+   - Support data-driven model selection.
+
+---
+
+## 📈 Dashboard Visualizations
+
+### 1️⃣ Occupancy Trend
+- **Visualization Type:** Time-series line chart  
+- **Purpose:** Displays average occupancy rate over time to identify demand cycles, anomalies, and seasonality.
+
+---
+
+### 2️⃣ LSTM Forecast: Predicted vs Actual Occupancy Rate
+- **Visualization Type:** Dual-line comparison chart  
+- **Purpose:** Compares LSTM model predictions against observed occupancy to evaluate forecasting quality and trend alignment.
+
+---
+
+### 3️⃣ Occupancy Heatmap (Day × Hour)
+- **Visualization Type:** Heatmap  
+- **Purpose:** Highlights peak usage windows by hour of day and day of week, enabling operational optimization and staffing decisions.
+
+---
+
+### 4️⃣ Model Comparison: Forecast Error by Model (MAPE)
+- **Visualization Type:** Bar chart  
+- **Models Evaluated:**
+  - Gradient Boosting  
+  - Linear Regression  
+  - LSTM  
+  - Neural Network  
+  - Random Forest  
+
+- **Purpose:** Benchmarks forecasting models using Mean Absolute Percentage Error (MAPE) to identify the most reliable approach.
+
+---
+
+### 5️⃣ Current Occupancy Status (KPI Indicator)
+- **Visualization Type:** KPI summary card  
+- **Purpose:** Provides an at-a-glance operational metric showing current occupancy level for quick situational awareness.
+
+---
+
+## 🏗️ Architecture Context
+
+IoT Sensors → Data Pipeline → Feature Engineering → ML Forecasting → Tableau Analytics Layer
+
+The dashboard represents the **final analytics and decision layer** of the Smart Parking IoT system, translating raw telemetry and model outputs into actionable insights.
+
+---
+
+## 💡 Key Insights Enabled
+
+- Identification of peak occupancy periods
+- Forecast accuracy validation through visual comparison
+- Model benchmarking for continuous improvement
+- Real-time operational monitoring
+- Data-driven capacity planning
+
+---
+
+## 🔬 Technology Stack
+
+- **Data Source:** IoT Parking Sensor Data  
+- **Modeling:** LSTM, Gradient Boosting, Random Forest, Neural Networks, Linear Regression  
+- **Analytics & Visualization:** Tableau Public  
+- **Programming:** Python (Data Processing & ML Pipeline)
+
+---
+
+## 📌 Business Impact
+
+This dashboard demonstrates how IoT telemetry combined with machine learning can support:
+
+- Smart city parking optimization  
+- Reduced congestion through demand forecasting  
+- Improved resource allocation  
+- Proactive operational decision-making  
+
+It reflects a production-style analytics workflow where predictive modeling and interactive visualization work together to drive actionable intelligence.
 
 ### **📊 Dataset Overview:**
 - **719,882 Records** across 841 parking segments
@@ -247,3 +347,4 @@ The `.gitignore` file is configured to:
 - `data/raw/smart_parking_full.csv` - The main dataset is **NOT ignored** and should be committed
 
 This ensures the main dataset is always available while keeping generated files and temporary artifacts out of version control.
+
