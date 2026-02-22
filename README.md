@@ -5,7 +5,7 @@ An Applied AI project demonstrating a Smart Parking IoT architecture with sensor
 
 **Course:** AAI-530 </br>
 **Group:** 10 </br>
-**Project Status:** In Progress  
+**Project Status:** Completed
 
 ---
 
@@ -347,4 +347,5 @@ The `.gitignore` file is configured to:
 - `data/raw/smart_parking_full.csv` - The main dataset is **NOT ignored** and should be committed
 
 This ensures the main dataset is always available while keeping generated files and temporary artifacts out of version control.
+
 
